@@ -5,7 +5,7 @@ def division_1
 end
 
 def division_2(name)
-  puts 'My name is ' + name
+  puts "My name is #{name}"
 end
 
 def division_3

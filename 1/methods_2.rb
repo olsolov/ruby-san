@@ -1,7 +1,9 @@
-def division_2(name = "", age = nil, weight = 70)
-  puts 'My name is ' + name
-  puts 'My age is ' + "#{age}"
-  puts 'My weight is ' + weight.to_s
+# frozen_string_literal: true
+
+def division_2(name = '', age = nil, weight = 70)
+  puts "My name is #{name}"
+  puts "My age is #{age}"
+  puts "My weight is #{weight}"
   puts '__________'
 end
 

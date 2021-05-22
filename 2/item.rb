@@ -1,13 +1,21 @@
-class Item
-  name = 'Dasha'
+# frozen_string_literal: true
 
-  def price
-    return rand(100)
+class Item
+  attr_accessor :price, :weight, :name
+
+  def initialize(options = {})
+    @price = options[:price]
+    @weight = options[:weight]
+    @name = options[:name]
+  end
+
+  def info
+    if block_given?
+      yield price
+      yield weight
+      yield name
+    else
+      puts 'Nothing to show'
+    end
   end
 end
-
-item1 = Item.new
-item2 = Item.new
-
-p item1.price
-puts item2.price

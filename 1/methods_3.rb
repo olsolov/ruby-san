@@ -1,11 +1,12 @@
-def division_2(name = "", age = nil, weight = 70)
+# frozen_string_literal: true
 
-  if name != 'Dasha' && age == nil
+def division_2(name = '', age = nil, _weight = 70)
+  if name != 'Dasha' && age.nil?
     var = 'Hello'
     var += ' World'
   end
 
-  return var
+  var
 end
 
 puts division_2('Masha')
