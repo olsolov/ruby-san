@@ -29,7 +29,7 @@ class Item
   end
 
   def price
-    (@real_price - @real_price * self.class.discount) + tax
+    (@real_price - @real_price * self.class.discount) + tax if real_price && real_price
   end
 
   private
