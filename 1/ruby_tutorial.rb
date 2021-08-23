@@ -38,6 +38,50 @@ class RubyTutorial
 
     p rand(1..5)
     p rand(1...5)
+    p '_______'
+
+    p 'SASHA'.downcase
+    p 'sasha'.upcase
+    p 'sa da ma za'.capitalize
+    p '_______'
+
+    string = 'sasha masha'
+    p string.chars
+    p '_______'
+
+    p string.split
+    p '_______'
+
+    array = %w[sasha dasha pasha]
+    p array.find_index('sasha')
+    p '_______'
+
+    array = [1, 20, 3, 4]
+    array.find_all { |num| p num.odd? unless num.nil? }
+    array.find_all { |_num| p true }
+    p '_______'
+    array.find { |num| p num.even? }
+    p '_______'
+
+    array.map { |str| p str.to_s.length }
+    p '_______'
+
+    hash = { car: 'audi', name: 'a8', engine: 'v12' }
+    p hash.reverse_each.to_h
+    p '_______'
+
+    [['audi', 'black', 2008], ['bmw', 'red', 2014]].each do |car, color, year|
+      puts "car: #{car}, color: #{color}, year: #{year}"
+    end
+    p '_______'
+
+    p hash.empty?
+
+    p hash.size
+    p hash.keys
+    p hash.values
+    p hash.include? :car
+    p hash.sort
   end
 end
 
