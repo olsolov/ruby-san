@@ -9,13 +9,7 @@ require_relative 'item_container'
 
 # Dir['*.rb'].sort.each { |file| require_relative file }
 
-item1 = VirtualItem.new({ price: 202.0, weight: 120, name: 'Car' })
-item2 = RealItem.new({ price: 202.0, weight: 220, name: 'Cycle' })
-item3 = RealItem.new({ price: 90.0, weight: 320, name: 'Bike' })
-
-cart = Cart.new
-cart.add_item item1
-cart.add_item item2
-cart.add_item item3
-
-p cart
+@items = []
+@items << VirtualItem.new({ price: 202.0, weight: 300, name: 'car' })
+@items << RealItem.new({ price: 202.0, weight: 300, name: 'cycle' })
+@items << RealItem.new({ price: 90.0, weight: 300, name: 'bike' })

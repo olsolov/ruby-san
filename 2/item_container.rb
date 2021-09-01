@@ -2,7 +2,7 @@
 
 module ItemContainer
   module ClassMethods
-    MIN_PRICE = 100
+    MIN_PRICE = 5
 
     def min_price
       MIN_PRICE
